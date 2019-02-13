@@ -1,0 +1,77 @@
+#user{
+  display: flex;
+  position: relative;
+  height: 85px;
+  &:nth-child(2n) {
+    background-color: #efefef;
+  }
+  .avatar-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3px solid $userCircle;
+    }
+    .position{
+      position: absolute;
+      right: 13px;
+      bottom: 5px;
+      font-size: .7em;
+      font-weight: bold;
+      color: #555;
+      background-color: #fff;
+      width: 15px;
+      height: 15px;
+      line-height: 16px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #666;
+  
+    }
+  }
+
+  .info-box{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    padding: 5px;
+    p {
+      margin: 0;
+      letter-spacing: -.5px;
+      font-weight: 600;
+    }
+    .name {
+      font-size: .9em;
+      color: #333;
+    }
+    .description {
+      font-size: .6em;
+      color: #888;
+    }
+  }
+  &:hover{
+    background-color: $selectedColor;
+    .avatar-box img {
+      border-color: #fff;
+    }
+    .info-box{
+      .name {
+        color: #fff;
+      }
+      .description{
+        color: #333;
+      }
+    }
+    #avaliation {
+      opacity: 1;
+      transition: opacity .4s ease-out;
+    }
+  }
+}

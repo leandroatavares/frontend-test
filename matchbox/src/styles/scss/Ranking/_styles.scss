@@ -1,0 +1,26 @@
+#ranking{
+
+  .logo {
+    width: 150px;
+  }
+  .title {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 2px;
+    color: #272727;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: -3px;
+    margin: .6em 0 .5em 0;
+  }
+  .ranking-box {
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px
+  }
+}
